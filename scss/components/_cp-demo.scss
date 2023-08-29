@@ -1,8 +1,14 @@
 .preview-box {
     a.demo-preview-img {
         margin-bottom: 15px;
+        img {
+            @include transition;
+        }
         &:hover {
             transform: translateY(-7px);
+            img {
+                filter: blur(3px);
+            }
         }
     }
     .content {

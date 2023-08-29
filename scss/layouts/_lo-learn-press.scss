@@ -44,8 +44,11 @@
                     content: url("../images/learn-press/tick-mark-white.svg");
                     background-color: $color-primary;
                     top: 9px;
-                    width: 26px;
-                    height: 26px;
+                    width: 24px;
+                    height: 24px;
+                    padding-bottom: 1px;
+                    padding-right: 1px;
+                    padding-left: 1px;
                 }
             }
         }

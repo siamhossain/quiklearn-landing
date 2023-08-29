@@ -7,10 +7,10 @@
     overflow: hidden;
     z-index: 0;
 
-    padding: 190px 0 108px 0;
+    padding: 150px 0 108px 0;
     
     @include media-only('lg', min) {
-        padding: 150px 0 400px 0;
+        padding: 190px 0 0 0;
     }
     
     &-banner-wrapper {
@@ -31,7 +31,7 @@
         .hero-content {
             padding-top: 0;
             @include media-only ('sm', min) {
-                padding-top: 70px;
+                padding: 60px 0 118px 0;
             }
             .title-wrapper {
                 margin-bottom: 35px;
