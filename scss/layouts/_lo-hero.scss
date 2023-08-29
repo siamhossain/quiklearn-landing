@@ -30,7 +30,7 @@
 
         .hero-content {
             padding-top: 0;
-            @include media-only ('sm', min) {
+            @include media-only ('md', min) {
                 padding: 60px 0 118px 0;
             }
             .title-wrapper {
