@@ -1,0 +1,92 @@
+
+.rt-hero-section {
+
+    background-image: url("../images/hero/hero-section-bg.jpg");
+    @include background-content;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+
+    padding: 190px 0 108px 0;
+    
+    @include media-only('lg', min) {
+        padding: 150px 0 400px 0;
+    }
+    
+    &-banner-wrapper {
+        position: relative;
+        .hero-group-img {
+            position: relative;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            @include media-only (1850px, min) {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .hero-content {
+            padding-top: 0;
+            @include media-only ('sm', min) {
+                padding-top: 70px;
+            }
+            .title-wrapper {
+                margin-bottom: 35px;
+            }
+            .hero-title {
+                position: relative;
+                li {
+                    z-index: -1;
+                    position: absolute;
+                    &:nth-child(1) {
+                        left: -30px;
+                        top: -50px;
+                    }
+                }
+            }
+            .brand-list {
+                li {
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: translateY(-7px);
+                    }
+                }
+            }
+            .see-demo-btn {
+                border-radius: 50px;
+                background: rgba(255, 255, 255, 0.21);
+                padding: 23px 43px;
+                color: $color-white;
+                font-family: $font-outfit;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 0px;
+                letter-spacing: 0.16px;
+                text-transform: capitalize;
+                margin-bottom: 45px;
+                svg {
+                    margin-left: 5px;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.70);;
+                    color: $color-primary;
+                    transform: scale(1.03);
+                    svg {
+                        fill: $color-primary;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

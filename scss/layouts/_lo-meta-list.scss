@@ -1,0 +1,17 @@
+.meta-list {
+    gap: 20px;
+    li {
+        span, a {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #6C6C6C;
+        }
+        a {
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

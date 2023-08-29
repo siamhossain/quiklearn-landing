@@ -1,0 +1,244 @@
+/*=============================
+//  button
+==============================*/
+
+// Button 
+.button {
+    font-family: $font-roboto;
+    @include toRem(font-size, 16);
+    font-weight: 500;
+    line-height: 19px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 500px;
+    padding: 20px 30px;
+}
+
+// Primnary Button
+
+.button-primary {
+    align-items: center;
+    background: $color-secondary;
+    color: $color-white;
+    overflow: hidden;
+
+    &:hover {
+        // color: $color-primary;
+        // background-color: transparent;
+
+    }
+}
+
+// Transparent Button
+.button-transparent {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #1E1E2F;
+    color: #1E1E2F;
+    svg {
+        transition: all 0.3s ease;
+    }
+    &::after {
+        background: $color-white;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: -10;
+    }
+
+    &:hover {
+        background: $color-primary;
+        color: $color-white;
+        border: 1px solid $color-primary;
+        svg {
+            fill: $color-white;
+            transform: rotate(45deg);
+        }
+        &::after {
+            left: 120%;
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+}
+
+// White Button
+.button-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: $color-white;
+    color: $color-primary;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    svg {
+        transition: all 0.4s ease;
+    }
+    &:hover {
+        color: $color-white;
+        background: $color-secondary;
+        svg {
+            fill: $color-white;
+        }
+    }
+}
+
+//   -------------
+
+
+// btn-animation-2
+.e-button {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+   
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block; 
+    text-align: center;
+    position: relative;  
+    padding: 10px 5px;
+    border: 3px solid #fff;
+  }
+  
+  .line {
+    position: absolute;
+    background-color: #fff;
+    
+    &--one {
+      width: 1px;
+      height: 100%; 
+      left: 0;
+      top: 0;
+      transform: translate3d(0px, 102%, 0px);
+    }
+    
+    &--two {
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 0;
+      transform: translate3d(-102%, 0px, 0px);
+
+    }
+    
+    &--three {
+      width: 1px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      transform: translate3d(0px,-102%,0px);
+
+    }
+    &--four {
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      transform: translate3d(102%,0px,0px);
+
+    }
+  }
+  
+  &:hover {
+    .line {
+      opacity: 1;
+      &--one, &--two ,&--three, &--four {
+        transform: translate3d(0, 0, 0);
+        transition: transform .3s ease-in-out;
+      }
+      &--one {
+        transition-delay: 0s;
+      }
+      &--two {
+        transition-delay: 250ms;
+      }
+      &--three {
+        transition-delay: 500ms;
+      }
+      &--four {
+        transition-delay: 750ms;
+      }
+    }
+  }
+}
+
+// .btn-animation-3 {
+  // overflow: hidden;
+  // position: relative;
+  // text-decoration: none;
+  // transition: .2s transform ease-in-out;
+  // will-change: transform;
+  // z-index: 0;
+  // &::after {
+  //   background-color: $color-white;
+  //   border-radius: 3rem;
+  //   content: '';
+  //   height: 100%;
+  //   width: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   transform: translate(-100%, 0) rotate(10deg);
+  //   transform-origin: top left;
+  //   transition: .2s transform ease-out;
+  //   will-change: transform;
+  //   z-index: -1;
+  // }
+  // &:hover::after {
+  //   transform: translate(0, 0);
+  // }
+  // &:hover {
+  //   color: indigo;
+  //   transform: scale(1.05);
+  //   will-change: transform;
+  //   border: 1px solid transparent !important;
+  // }
+// }
+
+.coolBeans {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  &::before {
+    content: "";
+    background-color: $color-black;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    transform: skew(50deg);
+    transition: width 0.6s;
+    transform-origin: top left;
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    color: $color-white;
+    &::before {
+      height: 100%;
+      width: 200%;
+    }
+  }
+}
+
+.btn-dark {
+  background-color: $color-black;
+  // border: 1px solid $color-black;
+  color: $color-white;
+}

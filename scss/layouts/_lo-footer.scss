@@ -1,0 +1,186 @@
+.footer-section {
+    position: relative;
+    overflow: hidden;
+    .rt-footer-content-wrapper {
+        padding: 60px 0 30px 0;
+        @include media-only('sm', min) {
+            padding: 120px 0 76px 0;
+        }
+        .rt-footer-logo {
+            margin-bottom: 27px;
+        }
+        .rt-footer-content {
+            .para-text {
+
+            }
+            .rt-footer-link-list-wrapper {
+                .rt-footer-link-heading {
+                    font-family: $font-roboto;
+                    font-weight: 600;
+                    @include toRem(font-size, 20);
+                    line-height: 30px;
+                    color: $color-title;
+                    margin-bottom: 22px;
+                }
+                ul.rt-footer-link-list {
+                    li {
+                        position: relative;
+                        a {
+                            @extend .para-text;
+                            line-height: 40px;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                transform-origin: 100% 50%;
+                                transform: scale3d(0, 1, 1);
+                                transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1);
+                                top: 85%;
+                                
+                                position: absolute;
+                                width: 100%;
+                                height: 1px;
+                                background: $color-title;
+                                left: 0;
+                                pointer-events: none;
+                            }
+                            // &::before {
+                            // }
+
+                            &:hover {
+                                color: $color-black;
+                                &::before {
+                                    transform-origin: 0% 50%;
+                                    transform: scale3d(1, 1, 1);
+                                    transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //
+            .footer-newsletter-area {
+                .para-text {
+                    margin-bottom: 15px;
+                }
+                .rt-footer-link-heading {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    @include toRem(font-size, 24);
+                    line-height: 30px;
+                    color: $color-white;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .rt-footer-bottom {
+        padding: 25px 0 24px 0;
+        border-top: 1px solid #E3E3E3;;
+        .rt-footer-copyright-area {
+            flex-wrap: wrap;
+            .rt-footer-copyright-text {
+                font-family: $font-roboto;
+                font-weight: 400;
+                @include toRem(font-size, 16);
+                line-height: 19px;
+                text-transform: capitalize;
+                color: #6B707F;
+                a {
+                    @extend .rt-footer-copyright-text;
+                    font-weight: 500;
+                    color: $color-title;
+                    &:hover {
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    left: 135px;
+                    bottom: 0;  
+                    display: none;
+                    @include media-only('lg', min) {
+                        display: block;
+                    }
+                }   
+                &:nth-child(2) {
+                    right: 80px;
+                    top: 174px;  
+                    z-index: -1;
+                }   
+            }
+        }
+    }
+
+    &--style-2 {
+        // z-index: -1;
+        background: #1B2234;
+        .rt-footer-content-wrapper { 
+            .rt-footer-content {
+                .rt-footer-link-list-wrapper {
+                    .rt-footer-link-heading {
+                        color: $color-white;
+                        font-weight: 500;
+                    }
+                    ul.rt-footer-link-list {
+                        li {
+                            a {
+                                color: #C1C5D1;
+                                font-weight: 300;
+                                &::before {
+                                    background: $color-white;
+                                }
+                                &:hover {
+                                    color: $color-white;
+                                }
+                            }
+                        } 
+                    }
+                }
+                .para-text {
+                    color: #C1C5D1;
+                }
+                .email {
+                    font-family: $font-roboto;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-decoration: underline;
+                    text-decoration-thickness: 1px;
+                    color: $color-white;
+                    &:hover {
+                        color: $color-shade25;
+                    }
+                }
+            }
+        }
+
+        .rt-footer-bottom {
+            border-top: 1px solid #444D64;;
+            .rt-footer-copyright-area {
+                .rt-footer-copyright-text {
+                    font-weight: 300;
+                    color: #C1C5D1;
+                    a {
+                        @extend .rt-footer-copyright-text;
+                        color: #C1C5D1;
+                        font-weight: 400;
+                        &:hover {
+                            color: $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

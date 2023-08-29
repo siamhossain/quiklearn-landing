@@ -1,0 +1,70 @@
+.events-section {
+    background-image: url("../images/events/events-section-bg.jpg");
+    @include background-content;
+    position: relative;
+    // z-index: 0;
+    padding: 80px 0;
+
+    @include media-only ('lg', min) {
+        padding: 157px 0;
+    }
+
+    .section-content-wrapper {
+        gap: 95px;
+    }
+
+    .img-item-wrapper {
+        padding-top: 35px;
+        position: relative;
+        z-index: 0;
+
+        .shape-parallax-list {
+            li {
+                position: absolute;
+                z-index: -1;
+                &:nth-child(1) {
+                    top: 0;
+                    right: 10%;
+                }
+                &:nth-child(2) {
+                    right: -7%;
+                    top: 24%;
+                }
+                &:nth-child(3) {
+                    left: -3%;
+                    top: 32%;
+                }
+                &:nth-child(4) {
+                    bottom: 8%;
+                    left: -12%;
+                }
+            }
+        }
+    }
+    
+    .events-content {
+        max-width: 429px;
+
+        .title-wrapper {
+            .section-title {
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .feature-list {
+            li {
+                color: $color-text;
+                &::before {
+                    content: url("../images/learn-press/tick-mark-white.svg");
+                    background-color: $color-primary;
+                    top: 9px;
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+
+}

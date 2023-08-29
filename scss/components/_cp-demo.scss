@@ -1,0 +1,21 @@
+.preview-box {
+    a.demo-preview-img {
+        margin-bottom: 15px;
+        &:hover {
+            transform: translateY(-7px);
+        }
+    }
+    .content {
+        h3.title {
+            a {
+                color: $color-title;
+                font-family: $font-outfit;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 50px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,32 @@
+.title {
+    
+}  
+
+
+.title-wrapper {
+    .hero-title {
+        color: $color-white;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        color: #F8F7F2;
+
+    }
+    .section-title {
+        color: $color-title;
+        font-size: 28px;
+        @include media-only ('sm', min) {
+            font-size: 32px;
+        }
+        @include media-only ('md', min) {
+            font-size: 36px;
+        }
+    }
+}
+.para-text {
+    color: $color-text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: capitalize;
+}

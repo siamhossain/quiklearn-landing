@@ -1,0 +1,462 @@
+/*===========================
+//	Utility CSS.
+===========================*/
+
+ .rt-d-flex {
+	@extend %d-flex;
+}
+
+.rt-flex-wrap {
+	@extend %flex-wrap;
+}
+
+.rt-justify-content-center {
+	@extend %justify-content-center;
+}
+
+.rt-align-items-center {
+	@extend %align-items-center;
+}
+
+.rt-primary-color {
+	@extend %primary-color;
+}
+
+.rt-primary-color-bg {
+	@extend %primary-color-bg;
+}
+
+.rt-secondary-color {
+	@extend %secondary-color;
+}
+
+.rt-secondary-color-bg {
+	@extend %secondary-color-bg;
+}
+
+.rt-color-gray-bg {
+	@extend %color-gray-bg;
+}
+
+.rt-white-color {
+	@extend %white-color;
+}
+
+.rt-title-color {
+  @extend %title-color;
+}
+
+.rt-white-color-bg {
+	@extend %white-color-bg;
+}
+.rt-black-color {
+	@extend %black-color;
+}
+
+.rt-black-color-bg {
+	@extend %black-color-bg;
+}
+
+.rt-default-gutter {
+	@extend %default-gutter;
+}
+
+.rt-gutter-half {
+	@extend %gutter-half;
+}
+
+.rt-mb-0 {
+	@extend %mb-0;
+}
+
+.rt-static-content {
+	@extend %relative-content;
+}
+
+.rt-relative-content {
+	@extend %relative-content;
+}
+
+.rt-z-index-1 {
+	@extend %rt-z-index-1;
+}
+
+.rt-absolute-content {
+	@extend %relative-content;
+}
+
+//--
+.rt-color-bg {
+	@extend %color-bg;
+}
+.rt-color-dark-bg {
+	@extend %color-dark-bg;
+}
+
+.rt-color-lemon-bg {
+	@extend %color-lemon-bg;
+}
+
+.rt-color-shade4 {
+    @extend %color-shade4;
+}
+.rt-color-shade20 {
+    @extend %color-shade20;
+}
+.rt-color-shade30 {
+    @extend %color-shade30;
+}
+.rt-color-shade21 {
+    @extend %color-shade21;
+}
+.rt-color-shade22 {
+    @extend %color-shade22;
+}
+.rt-color-shade23 {
+    @extend %color-shade23;
+}
+
+.rt-color-shade1-bg {
+    @extend %color-shade1-bg;
+}
+.rt-color-shade2-bg {
+    @extend %color-shade2-bg;
+}
+.rt-color-shade3-bg {
+    @extend %color-shade3-bg;
+}
+.rt-color-shade4-bg {
+    @extend %color-shade4-bg;
+}
+.rt-color-shade5-bg {
+    @extend %color-shade5-bg;
+}
+.rt-color-shade6-bg {
+    @extend %color-shade6-bg;
+}
+.rt-color-shade7-bg {
+    @extend %color-shade7-bg;
+}
+.rt-color-shade8-bg {
+    @extend %color-shade8-bg;
+}
+.rt-color-shade9-bg {
+    @extend %color-shade9-bg;
+}
+.rt-color-shade10-bg {
+    @extend %color-shade10-bg;
+}
+.rt-color-shade11-bg {
+    @extend %color-shade11-bg;
+}
+.rt-color-shade12-bg {
+    @extend %color-shade12-bg;
+}
+.rt-color-shade13-bg {
+    @extend %color-shade13-bg;
+}
+.rt-color-shade14-bg {
+    @extend %color-shade14-bg;
+}
+.rt-color-shade15-bg {
+    @extend %color-shade15-bg;
+}
+.rt-color-shade16-bg {
+    @extend %color-shade16-bg;
+}
+.rt-color-shade17-bg {
+    @extend %color-shade17-bg;
+}
+.rt-color-shade18-bg {
+    @extend %color-shade18-bg;
+}
+.rt-color-shade19-bg {
+    @extend %color-shade19-bg;
+}
+.rt-color-shade20-bg {
+    @extend %color-shade20-bg;
+}
+.rt-color-shade21-bg {
+    @extend %color-shade21-bg;
+}
+.rt-color-shade22-bg {
+    @extend %color-shade22-bg;
+}
+.rt-color-shade23-bg {
+    @extend %color-shade23-bg;
+}
+.rt-color-shade24-bg {
+    @extend %color-shade24-bg;
+}
+.rt-color-shade25-bg {
+    @extend %color-shade25-bg;
+}
+.rt-color-shade26-bg {
+    @extend %color-shade26-bg;
+}
+.rt-color-shade27-bg {
+    @extend %color-shade27-bg;
+}
+.rt-color-shade28-bg {
+    @extend %color-shade28-bg;
+}
+.rt-color-shade29-bg {
+    @extend %color-shade29-bg;
+}
+
+.rt-seudo-none {
+	@extend %pseudo-none;
+}
+
+.rt-violet-bg-with-shadow {
+    @extend %violet-bg-with-shadow;
+}
+
+.rt-green-bg-with-shadow {
+    @extend %green-bg-with-shadow;
+}
+
+.rt-orange-bg-with-shadow {
+    @extend %orange-bg-with-shadow;
+}
+
+.rt-testimonial-card-box-shadow {
+    @extend %testimonial-card-box-shadow;
+}
+
+
+
+.rt-secondary-bg-with-shadow {
+    @extend %secondary-bg-with-shadow;
+}
+
+.rt-shade2-bg-with-shadow {
+    @extend %shade2-bg-with-shadow;
+}
+
+.rt-shade3-bg-with-shadow {
+    @extend %shade3-bg-with-shadow;
+}
+
+.rt-shade21-bg-with-shadow {
+    @extend %shade21-bg-with-shadow;
+}
+
+.rt-shade20-bg-with-shadow {
+    @extend %shade20-bg-with-shadow;
+}
+
+.rt-shade22-bg-with-shadow {
+    @extend %shade22-bg-with-shadow;
+}
+.rt-shade23-bg-with-shadow {
+    @extend %shade23-bg-with-shadow;
+}
+
+
+//gradient background
+
+.rt-gradient-bg-1 {
+    @extend %gradient-bg-1;
+}
+.rt-gradient-bg-2 {
+    @extend %gradient-bg-2;
+}
+.rt-gradient-bg-3 {
+    @extend %gradient-bg-3;
+}
+.rt-gradient-bg-4 {
+    @extend %gradient-bg-4;
+}
+.rt-gradient-bg-5 {
+    @extend %gradient-bg-5;
+}
+.rt-gradient-bg-6 {
+    @extend %gradient-bg-6;
+}
+.rt-gradient-bg-7 {
+    @extend %gradient-bg-7;
+}
+.rt-gradient-bg-8 {
+    @extend %gradient-bg-8;
+}
+.rt-gradient-bg-9 {
+    @extend %gradient-bg-9;
+}
+.rt-gradient-bg-10 {
+    @extend %gradient-bg-10;
+}
+.rt-gradient-bg-11 {
+    @extend %gradient-bg-11;
+}
+.rt-gradient-bg-12 {
+    @extend %gradient-bg-12;
+}
+.rt-gradient-bg-13 {
+    @extend %gradient-bg-13;
+}
+.rt-gradient-bg-14 {
+    @extend %gradient-bg-14;
+}
+.rt-gradient-bg-15 {
+    @extend %gradient-bg-15;
+}
+.rt-gradient-bg-16 {
+    @extend %gradient-bg-16;
+}
+.rt-gradient-bg-17 {
+    @extend %gradient-bg-17;
+}
+.rt-gradient-bg-18 {
+    @extend %gradient-bg-18;
+}
+.rt-gradient-bg-19 {
+    @extend %gradient-bg-19;
+}
+
+//border-colors
+.rt-border-color-shade3 {
+    @extend %border-color-shade3;
+}
+.rt-border-color-shade4 {
+    @extend %border-color-shade4;
+}
+.rt-border-color-shade5 {
+    @extend %border-color-shade5;
+}
+.rt-border-color-shade6 {
+    @extend %border-color-shade6;
+}
+.rt-border-color-shade7 {
+    @extend %border-color-shade7;
+}
+.rt-border-color-shade8 {
+    @extend %border-color-shade8;
+}
+.rt-border-color-shade9 {
+    @extend %border-color-shade9;
+}
+
+//border-radius 
+.rt-border-radius-10 {
+    @extend %border-radius-10;
+}
+
+.rt-border-radius-style-1 {
+    @extend %border-radius-style-1;
+}
+.rt-border-radius-style-2 {
+    @extend %border-radius-style-2;
+}
+.rt-border-radius-style-3 {
+    @extend %border-radius-style-3;
+}
+.rt-border-radius-style-4 {
+    @extend %border-radius-style-4;
+}
+.rt-border-radius-style-5 {
+    @extend %border-radius-style-5;
+}
+
+
+// helper classes
+
+.section-padding {
+    padding: 120px 0;
+
+    @include breakpoint("md") {
+        padding: 90px 0;
+    }
+
+    @include breakpoint("sm") {
+        padding: 70px 0;
+    }
+}
+
+
+.section-padding--two {
+    padding: 140px 0;
+
+    @include breakpoint("sm") {
+        padding: 100px 0;
+    }
+}
+
+.section-padding--3 {
+    padding: 100px 0;
+    
+    @include breakpoint("sm") {
+        padding: 70px 0;
+    }
+}
+
+.section-padding--4 {
+    padding: 80px 0;
+    
+    @include breakpoint("sm") {
+        padding: 60px 0;
+    }
+}
+
+
+//custom margin
+
+.rt-mb-30 {
+    @extend %mb-30;
+}
+.rt-negative-margin-top-150 {
+    @extend %negative-margin-top-150;
+}
+.rt-negative-margin-bottom-150 {
+    @extend %negative-margin-bottom-150;
+}
+
+  
+  /*================================
+  // para-text/normal text style
+  =================================*/
+  
+//   .para-text {
+//       font-family: $text-font;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 28px;
+//       color: #696969;
+//   }
+  //end
+
+  .circle-radius {
+    border-radius: 50%;
+  }
+  
+
+
+  .sticky-tab-style {
+    position: sticky;
+    top: 77px;
+    z-index: 1;
+    background: white;
+    padding: 15px 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0px 0px 8px 8px;
+    @include transition;
+  }
+
+
+//   wow-animation
+.animate__animated {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+// swiper
+.swiper-vertical {
+    max-height: 205px;
+}
+
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+}

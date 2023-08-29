@@ -1,0 +1,77 @@
+.rt-card {
+    position: relative;
+    .icon {
+        border-radius: 50%; 
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 20px;
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     background: inherit;
+        //     height: inherit;
+        //     width: inherit;
+        //     border-radius: inherit;
+        //     z-index: -1;
+        // }
+    }
+    .card-title {
+        margin-bottom: 19px;
+        a {
+            color: #000;
+            font-family: $font-outfit;
+            @include toRem(font-size, 18);
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        line-height: 26px;
+    }
+    .card-info {
+        font-family: $font-roboto;
+        font-weight: 400;
+        @include toRem(font-size, 16);
+        line-height: 26px;
+        color: #6B707F;
+        margin-bottom: 24px;
+        @include transition;
+    }
+    .card-btn {
+        font-family: $font-roboto;
+        font-weight: 500;
+        @include toRem(font-size, 15);
+        line-height: 26px;
+        color: #1D2746;
+        border: 1px solid $title-font;
+        border-radius: 100px;
+        padding: 6px 21px;
+        @include transition;
+        &:hover {
+
+        }
+    }
+
+    &:hover {
+        .icon {
+            img {
+                animation: pulse 0.5s forwards;
+            }
+        }
+    }
+
+    
+
+    &--style-2 {
+        .card-icon-wrapper {
+            width: 170px;
+            height: 160px;
+            border-radius: 25px;
+            border: 1px solid #DADADA;
+            background: #FFF;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+            display: inline-block;
+            margin-bottom: 17px;
+        }
+        .card-title {
+            padding: 0 20px;
+        }
+    }
+}

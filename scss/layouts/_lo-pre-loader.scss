@@ -1,0 +1,155 @@
+/*======================================
+// pre-loader
+=====================================*/
+
+#preloader {
+    position: fixed;
+    background: #FFFFFF;
+    // opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+
+    //spinner
+    .loading-wrapper {
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      top: calc(50% - 100px);
+      left: calc(50% - 100px);
+      display: flex;
+      font-family: Helvetica;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .loading-text {
+      text-align: center;
+    }
+    
+    .circle {
+      box-sizing: border-box;
+      border-top: 7px solid $color-secondary;
+      border-bottom: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-radius: 100%;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: $color-secondary;
+        left: 19px;
+        top: 17px;
+        border-radius: 100px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: $color-secondary;
+        right: 19px;
+        top: 17px;
+        border-radius: 100px;
+      }
+    }
+    
+    .loading-circle {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      animation: rotate 1.5s infinite;
+    }
+    
+    .loading-circle-small {
+      height: 70%;
+      width: 70%;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      // animation: rotate-reverse 1.5s infinite linear;
+      background: $color-secondary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .doc-icon {
+          width: 45px;
+          height: 60px;
+          background: $color-white;
+          border-radius: 3px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          padding: 12px 8px;
+          .line {
+            width: 100%;
+            height: 4px;
+            background: black;
+            margin-bottom: 8px;
+            border-radius: 15px;
+            @include transition;
+            &:nth-child(1) {
+              animation: line-fill 0.5s infinite alternate;
+              @include transition;
+            }
+            &:nth-child(2) {
+              width: 70%;
+              animation: line-fill-small 0.5s infinite alternate;
+              @include transition;
+              transition-delay: 0.5s;
+            }
+            &:nth-child(3) {
+              animation: line-fill-small 0.5s infinite alternate;
+              @include transition;
+              transition-delay: 0.8s;
+            }
+            &:nth-child(4) {
+              animation: line-fill 0.5s infinite alternate;
+              @include transition;
+              transition-delay: 1s;
+            }
+          }
+      }
+
+    }
+
+
+    //animation
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+    @keyframes line-fill {
+      from {
+        width: 0;
+        opacity: 1;
+      }
+      to {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+
+    @keyframes line-fill-small {
+      from {
+        width: 0;
+        opacity: 1;
+      }
+      to {
+        width: 70%;
+        opacity: 1;
+      }
+    }   
+}
+

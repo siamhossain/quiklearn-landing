@@ -1,0 +1,69 @@
+.learnpress-section {
+    background-image: url("../images/learn-press/learnpress-section-bg.jpg");
+    @include background-content;
+    position: relative;
+    z-index: 0;
+    padding: 80px 0;
+
+    @include media-only ('lg', min) {
+        padding: 157px 0;
+    }
+
+    .section-content-wrapper {
+        gap: 40px;
+        @include media-only ('lg', min) {
+            gap: 95px;
+        }
+    }
+
+    .img-item-wrapper {
+        padding-top: 35px;
+    }
+    
+    .learnpress-content {
+        flex: 1;
+        .learnpress-logo {
+            margin-bottom: 15px;
+        }
+
+        .title-wrapper {
+            .section-title {
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .feature-list {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            li {
+                color: $color-text;
+                &::before {
+                    content: url("../images/learn-press/tick-mark-white.svg");
+                    background-color: $color-primary;
+                    top: 9px;
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+
+    .shape-parallax-list {
+        li {
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                top: 115px;
+                left: 235px;
+            }
+            &:nth-child(2) {
+                right: 110px;
+                bottom: 110px;
+            }
+        }
+    }
+
+}

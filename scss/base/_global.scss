@@ -1,0 +1,199 @@
+/* ===========================
+//	Global CSS.
+=============================*/
+
+:root {
+    // Fonts
+    --font-body: 'Outfit', sans-serif;
+
+    --font-roboto: 'Roboto', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+
+    --font-outfit: 'Outfit', sans-serif;
+
+    --font-awesome: "Font Awesome 5 Free";
+
+    // Colors
+    --color-primary: #3948D2;
+    --color-secondary: #15C590;
+    --color-text: #4F536C;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --colorOverlay: #242424;
+
+    --color-hero-title: #1E1E2F;
+    --color-title: #241442;
+    --footer-bg: #292940;
+    --footer-text-color: #BFBFC6;
+    --color-meta: #66687B;
+    // --footer-text-color: --color-gray2;;
+
+    --color-gray1: #4D4D4D;
+    --color-gray2: #BFBFC6;
+    --color-gray3: #C4C4C4;
+    --color-gray4: #F0F0F0;
+    --color-gray5: #F9F9F9;
+    --color-gray6: #DCDCDC;
+    --color-gray7: #E6E6E6;
+    --color-gray8: #EFEFEF;
+    --color-gray9: #DEDBF1;
+    --color-gray10: #E7E7E7;
+    --color-gray11: #BDBABB;
+    --color-gray12: #9D9CAE;
+    --color-gray13: #F8F8F8;
+    --color-gray14: #DCDBE6;
+    --color-gray15: #F7F6F3;
+
+    --color-bg: #FFFCF6;
+    --color-dark-bg: #110E19;
+
+    --bg-color2: #EDF7F3;
+
+    --color-rating: #FFB443;
+
+    --color-shade1: #FFF9FB;
+    --color-shade2: #FAF7FF; 
+    --color-shade3: #F5F8FF;
+    --color-shade4: #FE3387;
+    --color-shade5: #9A66FE;
+    --color-shade6: #6889FF;
+    --color-shade7: #FFFEF8;
+    --color-shade8: #FBFBFF;
+    --color-shade9: #FFFBFB;
+    --color-shade10: #FBF9FF;
+    --color-shade11: #F9FFFA;
+    --color-shade12: #6C62CA;
+    --color-shade13: #FF8631;
+    --color-shade14: #FD5B5B;
+    --color-shade15: #1D8FFA;
+    --color-shade16: #E233FE;
+    --color-shade17: #4AD00A;
+    --color-shade18: #f7f7ff;
+    --color-shade19: #5160DD;
+    --color-shade20: #9933FE;
+    --color-shade21: #0ED86B;
+    --color-shade22: #4291EE;
+    --color-shade23: #FF912B;
+    --color-shade24: #F8851C;
+    --color-shade25: #8A58F3;
+    --color-shade26: #FF557B;
+    --color-shade27: #3B72FE;
+    --color-shade28: #FCFCFF ;
+    --color-shade29: #FAFBFF;
+    --color-shade30: ;
+
+    
+
+    //gradient color
+
+    --color-gradient-1: linear-gradient(133.03deg, #7A66FF 0%, #EBDFFF 116.64%);
+    --color-gradient-2: linear-gradient(133.03deg, #F57064 0%, #FFD0CC 116.64%);
+    --color-gradient-3: linear-gradient(133.03deg, #45C8C2 0%, #B6F7F4 116.64%);
+    --color-gradient-4: linear-gradient(133.03deg, #F480D4 0%, #FFD3F3 116.64%);
+    --color-gradient-5: linear-gradient(133.03deg, #6ADE33 0%, #C8EFB6 116.64%);
+    --color-gradient-6: linear-gradient(133.03deg, #3FC6FF 0%, #D7F3FF 116.64%);
+    --color-gradient-7: linear-gradient(133.03deg, #FFA41F 0%, #FFE3BB 116.64%);
+
+    --color-gradient-8: linear-gradient(122.96deg, #7AE985 11.09%, #49B5D7 90.59%);
+    --color-gradient-9: linear-gradient(122.96deg, #FF9966 11.09%, #FF5E62 90.59%);
+    --color-gradient-10: linear-gradient(122.96deg, #7AE9E2 11.09%, #4993D7 90.59%);
+    --color-gradient-11: linear-gradient(122.96deg, #C57AE9 11.09%, #8749D7 90.59%);
+    --color-gradient-12: linear-gradient(122.96deg, #1488CC 11.09%, #1453CC 90.59%);
+    --color-gradient-13: linear-gradient(122.96deg, #56AB2F 11.09%, #A8E063 90.59%);
+    --color-gradient-14: linear-gradient(122.96deg, #F8B500 11.09%, #FFDB7B 90.59%);
+    --color-gradient-15: linear-gradient(122.96deg, #7A7FE9 11.09%, #5549D7 90.59%);
+
+    --color-gradient-16: linear-gradient(122.96deg, #E8BAA6 11.09%, #E372BA 90.59%);
+    --color-gradient-17: linear-gradient(122.96deg, #B3F47F 11.09%, #1DB949 90.59%);
+    --color-gradient-18: linear-gradient(122.96deg, #FFC7C7 11.09%, #D7495A 90.59%);
+    --color-gradient-19: linear-gradient(122.96deg, #E5D6FA 11.09%, #9470E8 90.59%);
+
+
+
+
+
+    //border-radius
+
+    --border-radius-10: 10px;
+    --border-radius-50: 50px;
+    --border-radius-100: 100px;
+    --border-radius-lg: ;
+    --border-radius-xl: ;
+    --border-radius-none: 0;
+    
+
+    --button-radius1 : 50px;
+    --card-radius: 16px;
+
+    --border-radius-style-1: 0px 50px 50px 50px;
+    --border-radius-style-2: 0px 40px 40px 40px;
+    --border-radius-style-3: 50px 0px 50px 50px;
+    --border-radius-style-4: 10px 0px 0px 10px;
+    --border-radius-style-5: 0px 10px 10px 0px;
+
+    //border-colors
+    --border-color: #DBDBDB;
+    --border-color-shade-2: #BDBABB;
+
+    //box shadows
+    --box-shadow: 0px 20px 60px rgba(73, 21, 13, 0.1);
+
+    --card-box-shadow1: 8px 8px 36px rgba(0, 0, 0, 0.08);
+    --card-box-shadow2: 16px 16px 32px rgba(0, 0, 0, 0.1);
+    --card-box-shadow3: 12px 12px 48px rgba(0, 160, 103, 0.1);
+
+    --testimonial-card-box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/*============================ 
+// Global styles
+=============================*/
+
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    &__left {
+        padding-left: 0 !important;
+    }
+
+    &__right {
+        padding-right: 0 !important;
+    }
+}
+
+
+
+section,
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+
+//custom container
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1434px;
+    }
+}
+
+//animation 
+
+@keyframes toBottomFromTop {
+    49% {
+      transform: translateY(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }

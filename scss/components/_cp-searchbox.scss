@@ -1,0 +1,161 @@
+
+.searchbox-container {
+    width: 100%;
+    @include media-only('md', min) {
+        width: 786px;
+    } 
+
+    padding: 17px 22px 17px 30px ;
+    background: $color-white;
+    border-radius: 100px;
+    gap: 33px;
+    margin: 0 auto;
+    .category-selector {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 31px;
+            left: 5px;
+            top: 5px;
+            background: #D9D9D9;
+        }
+        .nice-select {
+            span {
+                font-family: $font-roboto;
+                font-weight: 500;
+                @include toRem(font-size, 15);
+                line-height: 18px;
+                color: #1D2746;
+            }
+            .list {
+                left: 10px;
+            }
+        }
+    }
+    .searchbox-textfield {
+        width: 50%;
+        .searchbox-input {
+            border: none;
+            background: $color-white;
+            width: 100%;
+            position: relative;
+            &::placeholder {
+                font-family: $font-roboto;
+                font-weight: 400;
+                @include toRem(font-size, 16);
+                line-height: 19px;
+                color: #8D8D8D;
+            }
+            &::before {
+                // content: url("../images/searchbox/search-icon.svg");
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 216px;
+                top: 10px;
+                background: red;
+            }
+        }
+    }
+    .searchbox-textfield {
+        .rt-searchbox-form {
+            .input-area {
+                gap: 6px;
+                svg {
+                    margin-top: -2px;
+                }
+            }
+        }
+    }
+    .searchbox-submit {
+        .rt-searchbox-btn {
+            font-family: $font-roboto;
+            font-weight: 500;
+            @include toRem(font-size, 20);
+            line-height: 23px;
+            padding: 11px 29px;
+            border-radius: 500px;
+            border: none;
+            background-color: $color-secondary;
+            color: $color-white;
+            &:hover {
+                background-color: $color-white;
+                transition: 0.2s;
+                &::before {
+                    // background-color: #0abb86;
+                }
+            }
+        }
+    }
+    &--style-1 {
+
+    }
+
+    &--style-2 {
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                background-color: $color-shade24;
+                color: $color-white;
+                &:hover {
+                    transition: 0.2s;
+                    background-color: $color-white;
+                    &::before {
+                        // background-color: $color-shade24;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    &--style-3 {
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                background: $color-shade25;
+                color: $color-white;
+                &:hover {
+                    background: $color-white;
+                    transition: 0.2s;
+                    &::before {
+                        // background-color: $color-shade25;
+                    }
+                }
+            }
+        }
+    }
+    &--style-4 {
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+        .searchbox-textfield {
+            .rt-searchbox-form {
+                .input-area {
+                    gap: 6px;
+                    svg {
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                background: #0289FF;
+                padding: 13px 29px;
+                @include toRem(font-size, 16);
+                line-height: 19px;
+                text-transform: uppercase;
+                color: $color-white;
+                &:hover {
+                    background: $color-white;
+                    transition: 0.2s;
+                    &::before {
+                        // background-color: #0289FF;
+                    }
+                }
+            }
+        }
+    }
+}

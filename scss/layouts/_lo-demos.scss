@@ -1,0 +1,29 @@
+.demos-section {
+    z-index: 0;
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .shape-parallax-list {
+        li {
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                left: 129px;
+                top: 100px;
+            }
+            &:nth-child(2) {
+                right: 86px;
+                top: 360px;
+            }
+            &:nth-child(3) {
+                left: 93px;
+                bottom: 121px;
+            }
+            &:nth-child(4) {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
