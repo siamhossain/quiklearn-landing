@@ -47,6 +47,12 @@
                     }
                 }
             }
+            .subtitle {
+                width: 100%;
+                @include media-only ('lg', min) {
+                    width: 80%;
+                }
+            }
             .brand-list {
                 li {
                     transition: all 0.3s ease-in-out;

@@ -13,14 +13,18 @@
     .title-wrapper {
         position: relative;
         display: inline-block;
-        margin-bottom: 26px;
+        margin-bottom: 20px;
         .section-title {
+            color: $color-white;
+            margin-bottom: 20px;
+        }
+        .para-text {
             color: $color-white;
         }
         .title-shape {
             position: absolute;
-            right: 26%;
-            bottom: -10px;
+            right: 20%;
+            top: 40%;
         }
     }
 
