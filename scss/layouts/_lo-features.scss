@@ -12,6 +12,11 @@
             display: inline-block;
             margin-bottom: 12px;
             font-weight: 600;
+            
+            @include media-only ('sm', min) {
+                padding: 0 50px;
+            }
+
         }
 
         .title-shape {

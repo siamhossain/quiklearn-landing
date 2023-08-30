@@ -14,7 +14,7 @@
     }
     .section-title {
         color: $color-title;
-        font-size: 28px;
+        font-size: 27px;
         @include media-only ('sm', min) {
             font-size: 32px;
         }
